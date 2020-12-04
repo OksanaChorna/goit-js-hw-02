@@ -1,10 +1,8 @@
 const formatString = function (string) {
-  const strSplit = string.split("");
-  console.log(strSplit.length);
-  if (strSplit.length <= 40) {
-    return strSplit.join("");
+  if (string.length <= 40) {
+    return string;
   } else {
-    return strSplit.splice(40, 1, "...");
+    return string.substring(0, 40) + "...";
   }
 };
 
