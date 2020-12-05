@@ -13,7 +13,6 @@ do {
 
 if (numbers.length > 0) {
   for (const number of numbers) {
-    // todo: use for of`
     total += Number(number);
   }
 }
